@@ -47,61 +47,15 @@
     <main>
         <form action="/register.html" method="post">
             <div>
-                <input type="text" id="nombreyapellido" name="nombreyapellido" placeholder="Nombre y apellido"></div>
-            </div>
-            <div>
-                <input type="text" id="nombredeusuario" name="nombredeusuario" placeholder="Nombre de usuari@"></div>
-            </div>
-            <div>
-                <input type="email" id="email" name="email" placeholder="E-mail"></div>
-            </div>
-            <div>
-                <label for="fechanacimiento">Fecha de nacimiento</label>
-                <input type="date" id="fechanacimiento" name="fechanacimiento" placeholder="Fecha de nacimiento"></div>
-            </div>
-            <div>
-                <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio"></div>
-            </div>
-            <div>
-            <label for="radioComprar">Comprar</label>
-            <input type="radio" id="radioComprar" name="perfil-usuario" value="Comprar">
-
-            <label for="radioVender">Vender</label>
-            <input type="radio" id="radioVender" name="perfil-usuario" value="Vender">
-            </div>
-            <div>
-                <label for="chkElectro">Electro</label>
-                <input type="checkbox" id="chkElectro" name="categoria-interes" value="Electro">
-
-                <label for="chkModa">Moda</label>
-                <input type="checkbox" id="chkModa" name="categoria-interes" value="Moda">
-
-                <label for="chkHogar">Hogar</label>
-                <input type="checkbox" id="chkHogar" name="categoria-interes" value="Hogar">
-
-                <label for="chkJugueteria">Jugueteria</label>
-                <input type="checkbox" id="chkJugueteria" name="categoria-interes" value="Jugueteria">
-
-                <label for="chkVidaSana">Vida Sana</label>
-                <input type="checkbox" id="chkVidaSama" name="categoria-interes" value="Vida Sana">
-            </div>
-            <div>
-                <label for="archivo">Subí tu foto de usuario:</label>
-                <input type="file" id="archivo" accept=".jpg, .png">
+                <input type="text" id="nombredeusuario" name="nombredeusuario" minlength="1" placeholder="Nombre de usuari@"></div>
             </div>
             <div>
                 <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña"></div>
             </div>
             <div>
-                <input type="password" id="contrasena" name="contrasena" placeholder="Confirmar contraseña"></div>
+                <button type="submit" class="boton-enviar">Enviar</button>
             </div>
-            <div>
-                <button type="submit">Enviar</button>
-            </div>
-            <div>
-                <button type="reset">Borrar todo</button>
-            </div>
-        </form>      
+        </form>   
     </main>
 
     <footer>
