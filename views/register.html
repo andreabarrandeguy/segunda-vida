@@ -16,10 +16,8 @@
 </head>
 <body>
     <header>
-        <div class="header">
-        <img class="logo" src="images/logo-mercado-liebre.svg" alt="logo">
-        <div class="buscador"><input type="text" name="search" required placeholder="Buscar productos, marcas"><i class="fa-solid fa-magnifying-glass formato-lupa"></i></div>
-        <br>
+        <div class="header"><div class="logo-buscador"><img class="logo" src="images/logo-mercado-liebre.svg" alt="logo">
+        <div class="buscador"><input type="text" name="search" class="buscador-ancho" required placeholder="Buscar productos, marcas"><i class="fa-solid fa-magnifying-glass formato-lupa"></i></div></div>
         <div class="texto-centrado"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</div></div>
 
         <br>
@@ -45,52 +43,54 @@
     </header> 
 
     <main>
-        <form action="/register.html" method="post">
+        <form action="/register.html" method="post" class="registro">
             <div>
-                <input type="text" id="nombreyapellido" name="nombreyapellido" placeholder="Nombre y apellido"></div>
+                <input type="text" id="nombreyapellido" class="box" name="nombreyapellido" placeholder="Nombre y apellido"></div>
             </div>
             <div>
-                <input type="text" id="nombredeusuario" name="nombredeusuario" placeholder="Nombre de usuari@"></div>
+                <input type="text" id="nombredeusuario" class="box" name="nombredeusuario" placeholder="Nombre de usuari@"></div>
             </div>
             <div>
-                <input type="email" id="email" name="email" placeholder="E-mail"></div>
+                <input type="email" id="email" class="box" name="email" placeholder="E-mail"></div>
             </div>
             <div>
-                <label for="fechanacimiento">Fecha de nacimiento</label>
-                <input type="date" id="fechanacimiento" name="fechanacimiento" placeholder="Fecha de nacimiento"></div>
+                <strong><label for="fechanacimiento">Fecha de nacimiento</label></strong><br>
+                <input class="box" type="date" id="fechanacimiento" name="fechanacimiento" placeholder="Fecha de nacimiento"></div>
             </div>
             <div>
-                <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio"></div>
+                <input type="text" id="domicilio" class="box" name="domicilio" placeholder="Domicilio"></div>
             </div>
             <div>
-            <label for="radioComprar">Comprar</label>
+            <strong>Perfil de usuario</strong><br>
             <input type="radio" id="radioComprar" name="perfil-usuario" value="Comprar">
+            <label for="radioComprar">Comprar</label>
 
-            <label for="radioVender">Vender</label>
             <input type="radio" id="radioVender" name="perfil-usuario" value="Vender">
+            <label for="radioVender">Vender</label>
             </div>
             <div>
-                <label for="chkElectro">Electro</label>
+                <strong>Intereses</strong><br>
                 <input type="checkbox" id="chkElectro" name="categoria-interes" value="Electro">
+                <label for="chkElectro">Electro</label><br>
 
-                <label for="chkModa">Moda</label>
                 <input type="checkbox" id="chkModa" name="categoria-interes" value="Moda">
+                <label for="chkModa">Moda</label><br>
 
-                <label for="chkHogar">Hogar</label>
                 <input type="checkbox" id="chkHogar" name="categoria-interes" value="Hogar">
+                <label for="chkHogar">Hogar</label><br>
 
-                <label for="chkJugueteria">Jugueteria</label>
                 <input type="checkbox" id="chkJugueteria" name="categoria-interes" value="Jugueteria">
+                <label for="chkJugueteria">Jugueteria</label><br>
 
-                <label for="chkVidaSana">Vida Sana</label>
                 <input type="checkbox" id="chkVidaSama" name="categoria-interes" value="Vida Sana">
+                <label for="chkVidaSana">Vida Sana</label>
             </div>
             <div>
-                <label for="archivo">Subí tu foto de usuario:</label>
+                <label for="archivo">Subí tu foto de usuario:</label><br>
                 <input type="file" id="archivo" accept=".jpg, .png">
             </div>
             <div>
-                <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña"></div>
+                <input type="password" id="contrasena" name="contrasena"></div>
             </div>
             <div>
                 <input type="password" id="contrasena" name="contrasena" placeholder="Confirmar contraseña"></div>
